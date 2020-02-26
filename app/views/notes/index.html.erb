@@ -1,0 +1,8 @@
+<h1>All Your Notes</h1>
+
+<% @notes.each do |note| %>
+  <%= note.title %>
+  <%= link_to 'Show Note', note_path(note) %>
+  <% end %>
+  <%= link_to 'New Note', new_note_path %>
+  <%= link_to 'Edit Note', edit_note_path %>
