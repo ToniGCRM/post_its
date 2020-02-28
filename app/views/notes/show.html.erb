@@ -1,7 +1,8 @@
 <h1>Notes</h1>
 
-<%= @note.title %>
-<%= @note.category %>
+<h2><%= @note.title %></h2>
+<div id = 'note_body'>
+<h4> Category :<%= @note.category %></h4>
 <%= @note.body %>
-
+</div>
 <%= link_to 'Back', notes_path %>
